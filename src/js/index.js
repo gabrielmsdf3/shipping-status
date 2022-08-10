@@ -3,7 +3,7 @@ const getOrderButton = document.querySelector(".orders-button");
 const ordersContainer = document.querySelector(".orders-container");
 
 async function listOrders() {
-  const response = await fetch("./dados.json");
+  const response = await fetch("./src/dados.json");
   const jsonData = await response.json();
   const encomendas = jsonData.encomendas;
 
